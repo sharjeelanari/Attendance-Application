@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/addstudentcdview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shapes"
+        android:layout_marginTop="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/studname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Student Name"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="10dp"
+                android:textSize="20sp"
+                android:textColor="@color/black"/>
+            <EditText
+                android:id="@+id/addstudentname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/studname"
+                android:layout_marginStart="25dp"
+                android:ems="5"
+                android:textColor="@color/black"
+                android:inputType="text"
+                android:textSize="20sp"/>
+            <TextView
+                android:id="@+id/studusn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/studname"
+                android:layout_marginStart="10dp"
+                android:text="Student Usn:"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:textColor="@color/black"/>
+            <EditText
+                android:id="@+id/addstudentusn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/studusn"
+                android:layout_marginStart="43dp"
+                android:layout_below="@id/studname"
+                android:ems="5"
+                android:textColor="@color/black"
+                android:inputType="text"
+                android:textSize="20sp"/>
+            <TextView
+                android:id="@+id/studbranch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/studusn"
+                android:layout_marginStart="10dp"
+                android:text="Batch: "
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:textColor="@color/black"/>
+            <EditText
+                android:id="@+id/addstudentbatch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/studbranch"
+                android:layout_marginStart="30dp"
+                android:layout_below="@id/studusn"
+                android:ems="5"
+                android:textColor="@color/black"
+                android:inputType="text"
+                android:textSize="20sp"/>
+            <TextView
+                android:id="@+id/teachername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/addstudentbatch"
+                android:text="Teacher Name: "
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"/>
+
+            <EditText
+                android:id="@+id/addteachername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_toEndOf="@id/teachername"
+                android:ems="5"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_below="@id/addstudentbatch"/>
+            <TextView
+                android:id="@+id/sem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/teachername"
+                android:text="Semester: "
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"/>
+            <EditText
+                android:id="@+id/addsemester"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/teachername"
+                android:layout_toEndOf="@id/sem"
+                android:layout_marginStart="75dp"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:inputType="number"
+                android:ems="5"/>
+
+            <TextView
+                android:id="@+id/subject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Subject: "
+                android:layout_below="@id/sem"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"/>
+
+            <EditText
+                android:id="@+id/addsubject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="5"
+                android:layout_below="@id/sem"
+                android:layout_toEndOf="@id/subject"
+                android:textSize="20sp"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:layout_marginStart="90dp"/>
+
+
+            <Button
+                 android:id="@+id/addstuddetailsbtn"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+               android:layout_below="@id/subject"
+                 android:layout_marginStart="130dp"
+                 android:layout_marginTop="15dp"
+                 android:text="Submit"/>
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

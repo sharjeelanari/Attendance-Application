@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AttendenceReport">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/reptoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_200">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/tcmenuid1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:src="@drawable/ic_baseline_menu_24"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/applogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Logo"
+                android:layout_toEndOf="@id/tcmenuid1"
+                android:layout_centerHorizontal="true"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp"
+                />
+
+            <Button
+                android:id="@+id/report"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:text="Attendence"/>
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/reptoolbar"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/studentreport"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/recview"/>
+
+    <EditText
+        android:id="@+id/attendrepfrom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="From date"
+        android:textStyle="bold"
+        android:layout_below="@+id/studentreport"
+        android:layout_margin="5dp"
+        android:textSize="20sp"
+        />
+
+
+    <EditText
+        android:id="@+id/attendrepto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="To date"
+        android:textStyle="bold"
+        android:layout_below="@+id/studentreport"
+        android:layout_toEndOf="@+id/attendrepfrom"
+        android:layout_margin="5dp"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/studattendencerep"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/attendrepfrom"
+        android:layout_alignParentBottom="true"
+        />
+
+
+
+
+</RelativeLayout>

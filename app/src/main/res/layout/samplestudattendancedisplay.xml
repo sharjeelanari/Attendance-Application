@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/addstudentcdview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shapes"
+        android:layout_marginTop="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/studname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Student Name:"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="10dp"
+                android:textSize="20sp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/showstudentname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/studname"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="5dp"
+                android:text="showstnm"
+
+                android:textColor="@color/black"
+
+                android:textSize="20sp"/>
+            <TextView
+                android:id="@+id/studusn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/studname"
+                android:layout_marginStart="10dp"
+                android:text="student usn"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/showstudentusn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/studusn"
+                android:layout_marginStart="43dp"
+                android:layout_below="@id/studname"
+                android:text="showusn"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:textSize="20sp"/>
+           <!-- <TextView
+                android:id="@+id/studbatch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/studusn"
+                android:layout_marginStart="10dp"
+                android:text="@string/studbatch"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/showstudentbranch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/studusn"
+                android:layout_marginStart="43dp"
+                android:layout_below="@id/studusn"
+                android:layout_marginTop="10dp"
+                android:text="@string/showstudbranch"
+                android:textColor="@color/black"
+                android:textSize="20sp"/>-->
+
+<!--            <ToggleButton-->
+<!--                android:id="@+id/togglebtn"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="130dp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_below="@id/studusn"/>-->
+
+
+            <RadioGroup
+                android:id="@+id/presabs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/studusn"
+                android:layout_centerHorizontal="true"
+                >
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Present"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Absent"/>
+
+            </RadioGroup>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
